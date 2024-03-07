@@ -34,7 +34,7 @@ export default function Header() {
       <span className="text-black text-3xl font-semibold font-mono">
         trikiet.le.16
       </span>
-      <div className="absolute right-10 ">
+      <div className="absolute right-20">
         <div>
           <motion.div
             variants={variant}
