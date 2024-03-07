@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
 export default function Hero() {
   const textIntroduce = "Hi,\n I'm Kiet,\n a frontent developer ";
   const variant = {
@@ -20,8 +20,8 @@ export default function Hero() {
     }),
   };
   return (
-    <div className="h-[600px] flex items-center justify-between p-20 gap-5">
-      <div className="whitespace-pre-line font-bold text-7xl">
+    <div className="h-[600px] flex items-center justify-between p-20 gap-4">
+      <div className="whitespace-pre-line font-bold text-7xl h-full flex flex-col justify-center gap-5">
         {textIntroduce.split("\n").map((word: string, index) => (
           <motion.div
             key={index}
@@ -35,6 +35,15 @@ export default function Hero() {
           </motion.div>
         ))}
       </div>
+      <motion.div
+        className="relative h-full w-[45%]"
+        variants={variant}
+        custom={3}
+        initial="initial"
+        animate="animate"
+      >
+        <Image src={"/images/avatar.jpg"} alt="avatar" fill={true} />
+      </motion.div>
     </div>
   );
 }

@@ -30,7 +30,7 @@ export default function Header() {
   const [isActive, setisActive] = useState(false);
 
   return (
-    <div className="sticky top-0 py-10 px-20 w-full h-fit flex items  backdrop-blur-sm">
+    <div className="sticky top-0 py-10 px-20 w-full h-fit flex items  backdrop-blur-sm z-50">
       <span className="text-black text-3xl font-semibold font-mono">
         trikiet.le.16
       </span>
