@@ -4,11 +4,17 @@ import React, { useEffect, useRef } from "react";
 
 interface Props {
   children: React.ReactElement;
-  className?: "string";
+  className?: string;
+  classNameItem?: string;
   custom?: number;
 }
 
-export default function Reveal({ children, className, custom = 1 }: Props) {
+export default function Reveal({
+  children,
+  className,
+  classNameItem,
+  custom = 1,
+}: Props) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -36,10 +42,10 @@ export default function Reveal({ children, className, custom = 1 }: Props) {
   };
 
   return (
-    <div ref={ref} className="relative">
+    <div ref={ref} className={`relative ${className}`}>
       <motion.div
         custom={custom}
-        className={className}
+        className={classNameItem}
         variants={variant}
         initial="initial"
         animate={mainControls}
