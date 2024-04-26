@@ -43,6 +43,14 @@ const config: Config = {
         ".-rotate-x-90-translate-y-8": {
           transform: "rotateX(-90deg) translateY(8px)",
         },
+        ".first-letter-text": {
+          "-webkit-text-fill-color": "black",
+          "-webkit-text-stroke-width": "2px",
+        },
+        ".transparent-border-text": {
+          "-webkit-text-fill-color": "transparent",
+          "-webkit-text-stroke-width": "2px",
+        },
       };
       addUtilities(newUtilities);
     },

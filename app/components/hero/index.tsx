@@ -3,6 +3,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Title from "./Title";
+import LineIcon from "@/public/images/line.svg";
+import Reveal from "../Reveal/Reveal";
+
 export default function Hero() {
   const textIntroduce =
     "“A front-end developer passionate about creating a user-friendly and appeal UI that enhance the UX.”";
@@ -22,37 +25,27 @@ export default function Hero() {
     }),
   };
   return (
-    <div className="h-[600px] flex items-center justify-between py-20 px-10 gap-4 bg-hero-pattern">
-      <div>
+    <div className="h-full flex items-center justify-around py-10 px-10 gap-4 bg-hero-pattern bg-cover flex-col md:flex-row">
+      <div className="w-[60%]">
         <Title />
       </div>
-      <div className="flex flex-col gap-2 items-center justify-center h-full w-[35%]">
-        <motion.div
-          // className="relative h-[268px] w-[268px]"
-          variants={variant}
-          initial="initial"
-          animate="animate"
-        >
+      <Image priority src={LineIcon} alt="Line" className="xl:block hidden" />
+
+      <div className="flex flex-col gap-2 items-center justify-center w-[35%]">
+        <Reveal>
           <Image
             src={"/images/hero-image.jpg"}
             alt="avatar"
             width={250}
             height={250}
-            className=" rounded-t-md"
+            className="rounded-t-md"
           />
-        </motion.div>
-        <div className="whitespace-pre-line font-bold text-xl h-full flex flex-col justify-center gap-5 w-[70%] text-center">
+        </Reveal>
+        <div className="whitespace-pre-line font-bold text-xl  h-full lg:flex flex-col justify-center gap-5 w-[70%] text-center  hidden">
           {textIntroduce.split("\n").map((word: string, index) => (
-            <motion.div
-              key={index}
-              className="w-fit"
-              custom={index}
-              initial="initial"
-              animate="animate"
-              variants={variant}
-            >
+            <Reveal key={index} custom={index}>
               <span>{word}</span>
-            </motion.div>
+            </Reveal>
           ))}
         </div>
       </div>
