@@ -48,7 +48,7 @@ export default function Header() {
     },
     {
       title: "about",
-      href: "/about",
+      href: "#about",
     },
     {
       title: "contact",
