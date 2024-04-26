@@ -4,10 +4,7 @@ import "./globals.css";
 import Header from "./components/layout/Header/Header";
 import SmoothScroll from "./components/SmoothScroll/SmoothScroll";
 
-export const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Kiet Le Tri",
@@ -21,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body className={inter.className}>
         <Header />
         <SmoothScroll>{children}</SmoothScroll>
       </body>
