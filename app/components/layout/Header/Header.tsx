@@ -4,6 +4,14 @@ import Button from "./Button";
 import { AnimatePresence, motion } from "framer-motion";
 import Navbar from "../Navbar/Navbar";
 import Link from "next/link";
+import { JetBrains_Mono } from "next/font/google";
+import { RouteType } from "../Navbar/data";
+import AnimatedText from "./AnimatedText";
+
+export const jetBrains_mono = JetBrains_Mono({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const variant = {
   open: {
@@ -29,7 +37,7 @@ const variant = {
 
 export default function Header() {
   const [isActive, setisActive] = useState(false);
-  const routes = [
+  const routes: RouteType[] = [
     {
       title: "services",
       href: "/services",
@@ -49,14 +57,22 @@ export default function Header() {
   ];
   return (
     <div className="sticky top-0 py-5 px-5 w-full h-fit flex items-center justify-between bg-[#f8f8f8] z-50">
-      <span className="text-black text-2xl font-semibold font-mono">
+      <span
+        className={`text-black text-2xl font-semibold ${jetBrains_mono.className} `}
+      >
         trikiet.le.16
       </span>
       {/* Web Menu */}
       <div className="hidden gap-6 md:flex">
-          {routes.map((route) => {
-            return <Link className="hover:animate-bounce hover:text-green-600" href={route.href}><span className="tracking-[0.25em] ">{route.title}</span></Link>
-          })}
+        {routes.map((route, index) => {
+          return (
+            <Link key={index} className="relative" href={route.href}>
+              <AnimatedText>
+                <span className="tracking-[0.25em] ">{route.title}</span>
+              </AnimatedText>
+            </Link>
+          );
+        })}
       </div>
       {/* Mobile Menu */}
       <div className="relative w-fit h-[64px] block md:hidden">
@@ -67,7 +83,9 @@ export default function Header() {
             initial="closed"
             className="bg-black h-[600px] w-[450px] rounded-[25px] relative"
           >
-            <AnimatePresence>{isActive && <Navbar />}</AnimatePresence>
+            <AnimatePresence>
+              {isActive && <Navbar routes={routes} />}
+            </AnimatePresence>
           </motion.div>
           <Button setisActive={setisActive} isActive={isActive} />
         </div>

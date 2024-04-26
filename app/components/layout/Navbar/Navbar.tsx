@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { links, footerLinks } from "./data";
+import { RouteType, footerLinks } from "./data";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -49,11 +49,11 @@ const slideIn = {
   },
 };
 
-export default function Navbar() {
+export default function Navbar({ routes }: { routes: RouteType[] }) {
   return (
     <div className="flex flex-col box-border px-10 pt-20 pb-12 h-full justify-between">
       <div className="flex flex-col gap-5">
-        {links.map((item, index) => (
+        {routes.map((route, index) => (
           <div key={`b_${index}`}>
             <motion.div
               variants={variant}
@@ -63,8 +63,8 @@ export default function Navbar() {
               animate="enter"
               exit="exit"
             >
-              <Link href={item.href} className="text-white">
-                {item.title}
+              <Link href={route.href} className="text-white">
+                {route.title}
               </Link>
             </motion.div>
           </div>

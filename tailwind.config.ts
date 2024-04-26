@@ -12,6 +12,8 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "hero-pattern":
+          "url('/images/beige-product-backdrop-with-blank-space.jpg')",
       },
       transitionTimingFunction: {
         "in-expo": "cubic-bezier(0.76, 0, 0.24, 1)",
@@ -37,6 +39,9 @@ const config: Config = {
         },
         ".-rotate-x-90-translate-y-12": {
           transform: "rotateX(-90deg) translateY(12px)",
+        },
+        ".-rotate-x-90-translate-y-8": {
+          transform: "rotateX(-90deg) translateY(8px)",
         },
       };
       addUtilities(newUtilities);
