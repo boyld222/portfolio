@@ -8,7 +8,7 @@ import { JetBrains_Mono } from "next/font/google";
 import { RouteType } from "../Navbar/data";
 import AnimatedText from "./AnimatedText";
 
-export const jetBrains_mono = JetBrains_Mono({
+const jetBrains_mono = JetBrains_Mono({
   subsets: ["latin"],
   display: "swap",
 });
