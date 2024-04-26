@@ -5,21 +5,23 @@ import Reveal from "../Reveal/Reveal";
 
 export default function About() {
   return (
-    <div className="h-full w-full flex items-center  p-10">
+    <section
+      id="about"
+      className="h-fit w-full flex items-start py-20 px-10 gap-40"
+    >
       <Reveal className="h-full w-[45%]" classNameItem="h-full w-full">
-        <div className="relative h-full w-full">
-          <Image
-            src={"/images/about-image.jpg"}
-            alt="avatar"
-            fill
-            objectFit="contain"
-            className="rounded-t-md"
-          />
-        </div>
+        <Image
+          src={"/images/about-image.jpg"}
+          alt="avatar"
+          width={1536}
+          height={2024}
+          objectFit="contain"
+          className=" aspect-auto w-full h-auto rounded object-cover sm:mx-auto  2xl:rounded-2xl"
+        />
       </Reveal>
-      <Reveal className="h-full w-[30%]">
+      <Reveal className="sticky lg:top-32 md:top-28 w-[45%]  self-start">
         <Info />
       </Reveal>
-    </div>
+    </section>
   );
 }

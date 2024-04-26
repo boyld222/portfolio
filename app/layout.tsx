@@ -22,10 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <SmoothScroll>
-          <Header />
-          {children}
-        </SmoothScroll>
+        <Header />
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );

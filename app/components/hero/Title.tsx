@@ -1,21 +1,21 @@
-import React from "react";
-import { motion } from "framer-motion";
-
-import "./Title.css";
 import Reveal from "../Reveal/Reveal";
+import "./Title.css";
 const Title = () => {
   const bigText = [
     {
       firstLetter: "L",
-      other: "essons",
+      other: "esson",
+      lastWord: "E",
     },
     {
       firstLetter: "T",
       other: "rying",
+      lastWord: "RI",
     },
     {
       firstLetter: "K",
       other: "nowledge",
+      lastWord: "IET",
     },
   ];
 
@@ -32,6 +32,12 @@ const Title = () => {
               key={text.other}
             >
               {text.other}
+            </span>
+            <span
+              className="md:text-8xl sm:text-6xl text-4xl  first-letter:pr-1 uppercase font-extrabold "
+              key={text.lastWord}
+            >
+              - {text.lastWord}
             </span>
           </>
         </Reveal>

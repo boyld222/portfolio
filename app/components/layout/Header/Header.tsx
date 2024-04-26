@@ -56,11 +56,11 @@ export default function Header() {
     },
   ];
   return (
-    <div className="sticky top-0 py-5 px-5 w-full h-fit flex items-center justify-between bg-[#f8f8f8] z-50">
+    <div className="fixed top-0 py-5 px-5 w-full h-fit flex items-center justify-between bg-[#f8f8f8] z-50">
       <span
         className={`text-black text-2xl font-semibold ${jetBrains_mono.className} `}
       >
-        trikiet.le.16
+        letrikiet
       </span>
       {/* Web Menu */}
       <div className="hidden gap-6 md:flex">
