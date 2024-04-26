@@ -1,5 +1,4 @@
 import Reveal from "../Reveal/Reveal";
-import "./Title.css";
 const Title = () => {
   const bigText = [
     {

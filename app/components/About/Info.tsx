@@ -7,7 +7,6 @@ export default function Info() {
       <h2 className="md:text-5xl font-bold">who am i ?</h2>
       <span className="md:text-3xl font-semibold">
         I’m a frontend developer with 2 years of experience in web development.
-        🚀
       </span>
       <span className="md:text-3xl font-semibold">
         Currently located in Ho Chi Minh City, Vietnam.

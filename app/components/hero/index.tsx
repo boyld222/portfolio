@@ -8,7 +8,7 @@ import Reveal from "../Reveal/Reveal";
 
 export default function Hero() {
   const textIntroduce =
-    "“A front-end developer passionate about creating a user-friendly and appeal UI that enhance the UX.”";
+    "“A front-end developer passionate about creating a user-friendly and appeal UI that enhance the UX. 🚀”";
 
   return (
     <section
@@ -20,14 +20,15 @@ export default function Hero() {
       </div>
       <Image priority src={LineIcon} alt="Line" className="xl:block hidden" />
 
-      <div className="flex flex-col gap-2 items-center justify-center w-[35%]">
-        <Reveal>
+      <div className="flex flex-col gap-4 items-center justify-center w-[35%]">
+        <Reveal className="w-1/2">
           <Image
-            src={"/images/hero-image.jpg"}
+            src={"/images/hero-image-2.jpg"}
             alt="avatar"
             width={250}
             height={250}
-            className="rounded-t-md"
+            quality={100}
+            className="rounded-2xl w-full object-cover shadow-2xl"
           />
         </Reveal>
         <div className="whitespace-pre-line font-bold text-xl  h-full lg:flex flex-col justify-center gap-5 w-[70%] text-center  hidden">
