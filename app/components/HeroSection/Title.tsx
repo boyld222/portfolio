@@ -19,7 +19,7 @@ const Title = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-1">
+    <div className="flex flex-col gap-1 ">
       {bigText.map((text, index) => (
         <Reveal key={index} custom={index}>
           <>

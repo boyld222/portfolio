@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="h-full flex items-center justify-around py-10 px-10 gap-4 bg-hero-pattern bg-cover flex-col md:flex-row"
+      className="h-full flex items-center justify-around py-10 px-10 gap-4 bg-gradient-to-r from-[#dacfba] to-[#ddd4cc] bg-cover flex-col md:flex-row"
     >
       <div className="w-[60%]">
         <Title />
@@ -25,7 +25,6 @@ export default function Hero() {
             alt="avatar"
             width={250}
             height={250}
-            quality={100}
             className="rounded-2xl w-full object-cover shadow-2xl"
           />
         </Reveal>

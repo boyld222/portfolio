@@ -1,12 +1,12 @@
 "use client";
 import React, { useState } from "react";
-import Button from "./Button";
 import { AnimatePresence, motion } from "framer-motion";
-import Navbar from "../Navbar/Navbar";
 import Link from "next/link";
 import { JetBrains_Mono } from "next/font/google";
-import { RouteType } from "../Navbar/data";
+import Navbar from "../Navbar/Navbar";
+import Button from "./Button";
 import AnimatedText from "./AnimatedText";
+import { RouteType } from "../Navbar/data";
 
 const jetBrains_mono = JetBrains_Mono({
   subsets: ["latin"],
