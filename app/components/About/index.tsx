@@ -16,7 +16,7 @@ export default function About() {
           width={1536}
           height={2024}
           objectFit="contain"
-          className=" aspect-auto w-full h-auto rounded object-cover sm:mx-auto  2xl:rounded-2xl"
+          className=" aspect-auto w-full h-auto rounded object-cover sm:mx-auto 2xl:rounded-2xl shadow-2xl"
         />
       </Reveal>
       <Reveal className="sticky lg:top-32 md:top-28 w-[45%]  self-start">
