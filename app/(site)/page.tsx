@@ -5,7 +5,7 @@ import Works from "../components/WorkSection";
 
 export default function Home() {
   return (
-    <main className="h-screen w-fit">
+    <main className="h-screen w-fit lg;pt-2 pt-10">
       <Hero />
       <About />
       <Services />
