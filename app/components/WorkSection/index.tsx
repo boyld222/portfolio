@@ -1,9 +1,11 @@
 import WorkBox from "./WorkBox";
+import TcomPic from "@/public/images/background-tmt.png";
+import EcomPic from "@/public/images/background-ecom.png";
 
 export default function Works() {
   const works = [
     {
-      imgSrc: "/images/background-ecom.png",
+      imgSrc: TcomPic,
       name: "ECOM356 ERP HRM",
       link: "https://www.ecom365.app",
       company: "ECOM365.",
@@ -11,7 +13,7 @@ export default function Works() {
       year: 2023,
     },
     {
-      imgSrc: "/images/background-tmt.png",
+      imgSrc: EcomPic,
       name: "TMT SUBCLO",
       link: "https://pre.subclo.jp/simulation",
       company: "TCOM CORP.",

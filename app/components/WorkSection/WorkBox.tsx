@@ -1,10 +1,10 @@
 import React from "react";
 import Reveal from "../Reveal/Reveal";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 interface Props {
-  imgSrc?: string;
+  imgSrc?: StaticImageData;
   reverse?: boolean;
   company: string;
   name: string;
@@ -39,6 +39,7 @@ export default function WorkBox({
               alt="avatar"
               width={1536}
               height={2024}
+              placeholder="blur"
               className=" aspect-auto w-full h-full object-contain rounded  sm:mx-auto  hover:scale-110 transform transition duration-700"
             />
           </div>
