@@ -55,7 +55,7 @@ export default function WorkBox({
 
           <div className="rounded-full w-fit border-2 border-solid border-gray-300 lg:p-5 p-2">
             {tech.map((item, index) => (
-              <span key={item} className="lg:mr-2 mr-1 text-sm">
+              <span key={item} className="lg:mr-2 mr-1 text-sm lg:text-base">
                 {item} {index !== tech.length - 1 && "●"}
               </span>
             ))}

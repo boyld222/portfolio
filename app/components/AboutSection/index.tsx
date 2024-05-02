@@ -7,10 +7,10 @@ export default function About() {
   return (
     <section
       id="about"
-      className="h-fit w-full flex-col md:flex-row flex items-start py-20 px-10 md:gap-40 gap-10"
+      className="h-fit w-full flex-col lg:flex-row flex items-start py-20 px-10 lg:gap-40 gap-10"
     >
       <Reveal
-        className="h-full md:w-[45%] w-full"
+        className="h-full lg:w-[45%] w-full"
         classNameItem="h-full w-full"
       >
         <Image
@@ -22,7 +22,7 @@ export default function About() {
           className=" aspect-auto w-full h-auto rounded object-cover sm:mx-auto 2xl:rounded-2xl shadow-2xl"
         />
       </Reveal>
-      <Reveal className="sticky lg:top-32 md:top-28 md:w-[45%] w-full  self-start">
+      <Reveal className="sticky xl:top-32 lg:top-28 lg:w-[45%] w-full  self-start">
         <Info />
       </Reveal>
     </section>

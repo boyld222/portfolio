@@ -63,7 +63,7 @@ export default function Header() {
         letrikiet
       </span>
       {/* Web Menu */}
-      <div className="hidden gap-6 md:flex">
+      <div className="hidden gap-6 lg:flex">
         {routes.map((route, index) => {
           return (
             <Link key={index} className="relative" href={route.href}>
@@ -75,7 +75,7 @@ export default function Header() {
         })}
       </div>
       {/* Mobile Menu */}
-      <div className="relative w-fit h-[64px] block md:hidden">
+      <div className="relative w-fit h-[64px] block lg:hidden">
         <div className="absolute top-0 right-0">
           <motion.div
             variants={variant}
