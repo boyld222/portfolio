@@ -33,13 +33,15 @@ export default function WorkBox({
         classNameItem="h-full w-full"
       >
         <Link href={link || ""} target="_blank" className="h-full w-full block">
-          <Image
-            src={imgSrc || "/images/about-image.jpg"}
-            alt="avatar"
-            width={1536}
-            height={2024}
-            className=" aspect-auto w-full h-full object-contain rounded  sm:mx-auto  hover:scale-110 transform transition duration-700"
-          />
+          <div className="w-full h-full bg-black">
+            <Image
+              src={imgSrc || "/images/about-image.jpg"}
+              alt="avatar"
+              width={1536}
+              height={2024}
+              className=" aspect-auto w-full h-full object-contain rounded  sm:mx-auto  hover:scale-110 transform transition duration-700"
+            />
+          </div>
         </Link>
       </Reveal>
       <Reveal className={`lg:w-[45%] w-full self-center text-gray-300 `}>
