@@ -9,7 +9,7 @@ interface Props {
   company: string;
   name: string;
   tech: Array<string>;
-  year: number;
+  year: number | string;
   link: string;
 }
 
@@ -28,7 +28,7 @@ export default function WorkBox({
         reverse ? "lg:flex-row-reverse" : "lg:flex-row"
       } flex items-start py-10 px-5 lg:px-10 lg:py-20 gap-10 justify-center`}
     >
-      <div className="sm:h-[250px] md:h-[325px] lg:h-[400px] lg:w-fit w-full overflow-hidden lg:rounded-xl  shadow-2xl shadow-gray-500">
+      <div className="sm:h-[250px] md:h-[325px] lg:h-[400px] lg:w-fit w-full overflow-hidden rounded-xl  shadow-2xl shadow-gray-500">
         <Link href={link || ""} target="_blank" className="h-full w-full block">
           <div className="w-full h-full bg-black">
             <Image

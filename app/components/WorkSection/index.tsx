@@ -1,6 +1,7 @@
 import WorkBox from "./WorkBox";
 import TcomPic from "@/public/images/background-tmt.png";
 import EcomPic from "@/public/images/background-ecom.png";
+import KiengLa from "@/public/images/background-kiengla.png";
 
 export default function Works() {
   const works = [
@@ -19,6 +20,14 @@ export default function Works() {
       company: "TCOM CORP.",
       tech: ["ReactJS", "SCSS", "HTML", "AntD"],
       year: 2022,
+    },
+    {
+      imgSrc: KiengLa,
+      name: "Kieng La Ba Ria",
+      link: "",
+      company: "Kieng La Ba Ria.",
+      tech: ["NextJS", "TailwindCss", "Figma"],
+      year: "Freelance",
     },
   ];
   return (
