@@ -1,12 +1,12 @@
 "use client";
-import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 import { JetBrains_Mono } from "next/font/google";
+import Link from "next/link";
+import { useState } from "react";
 import Navbar from "../Navbar/Navbar";
-import Button from "./Button";
-import AnimatedText from "./AnimatedText";
 import { RouteType } from "../Navbar/data";
+import AnimatedText from "./AnimatedText";
+import Button from "./Button";
 
 const jetBrains_mono = JetBrains_Mono({
   subsets: ["latin"],
@@ -40,11 +40,11 @@ export default function Header() {
   const routes: RouteType[] = [
     {
       title: "services",
-      href: "/services",
+      href: "#services",
     },
     {
       title: "works",
-      href: "/works",
+      href: "#works",
     },
     {
       title: "about",
@@ -52,7 +52,7 @@ export default function Header() {
     },
     {
       title: "contact",
-      href: "/contact",
+      href: "#contact",
     },
   ];
   return (
