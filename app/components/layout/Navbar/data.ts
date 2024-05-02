@@ -1,19 +1,11 @@
 export const footerLinks = [
   {
-    title: "Facebook",
-    href: "/",
+    title: "Github",
+    href: "https://github.com/boyld222",
   },
   {
     title: "LinkedIn",
-    href: "/",
-  },
-  {
-    title: "Instagram",
-    href: "/",
-  },
-  {
-    title: "Twitter",
-    href: "/",
+    href: "https://www.linkedin.com/in/kietletri",
   },
 ];
 
