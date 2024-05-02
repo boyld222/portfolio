@@ -6,7 +6,9 @@ import Reveal from "../Reveal/Reveal";
 export default function ServicesBox() {
   return (
     <div className="md:h-[300px] h-full w-full bg-[#E5E3DB] p-5 rounded-lg shadow-2xl">
-      <h2 className="md:text-3xl underline font-bold mb-5">Web Development</h2>
+      <h2 className="md:text-3xl underline font-bold mb-5 text-xl">
+        Web Development
+      </h2>
       <div className="flex md:justify-between  gap-10 md:items-center flex-col md:flex-row">
         <p className="md:text-3xl font-semibold md:w-[60%] w-full text-xl">
           I craft personalized websites that reflect your brand's vibe. Focusing

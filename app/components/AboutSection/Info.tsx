@@ -19,6 +19,16 @@ export default function Info() {
         In my free time, i love to learn about how the graphic effect works,
         reading books, playing games. 😎
       </span>
+      <span className="md:text-3xl text-xl font-semibold">
+        Here is{" "}
+        <a
+          href="/resume.pdf"
+          download="CV-LeTriKiet-Frontend-Dev"
+          className="underline uppercase text-blue-600"
+        >
+          my CV
+        </a>
+      </span>
     </div>
   );
 }

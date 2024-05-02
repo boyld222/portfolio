@@ -3,6 +3,7 @@ import LineIcon from "@/public/images/line.svg";
 import Image from "next/image";
 import Reveal from "../Reveal/Reveal";
 import Title from "./Title";
+import Link from "next/link";
 
 export default function Hero() {
   const textIntroduce =
