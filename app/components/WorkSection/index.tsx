@@ -6,7 +6,7 @@ import KiengLa from "@/public/images/background-kiengla.png";
 export default function Works() {
   const works = [
     {
-      imgSrc: TcomPic,
+      imgSrc: EcomPic,
       name: "ECOM356 ERP HRM",
       link: "https://www.ecom365.app",
       company: "ECOM365.",
@@ -14,7 +14,7 @@ export default function Works() {
       year: 2023,
     },
     {
-      imgSrc: EcomPic,
+      imgSrc: TcomPic,
       name: "TMT SUBCLO",
       link: "https://pre.subclo.jp/simulation",
       company: "TCOM CORP.",
