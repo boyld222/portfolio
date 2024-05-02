@@ -29,7 +29,7 @@ export default function WorkBox({
       } flex items-start py-10 px-5 lg:px-10 lg:py-20 gap-10 justify-center`}
     >
       <Reveal
-        className="h-[325px] lg:h-[400px] lg:w-fit w-full overflow-hidden lg:rounded-xl  shadow-2xl shadow-gray-500"
+        className="sm:h-[250px] md:h-[325px] lg:h-[400px] lg:w-fit w-full overflow-hidden lg:rounded-xl  shadow-2xl shadow-gray-500"
         classNameItem="h-full w-full"
       >
         <Link href={link || ""} target="_blank" className="h-full w-full block">
