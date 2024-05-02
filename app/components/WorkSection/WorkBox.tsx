@@ -29,16 +29,16 @@ export default function WorkBox({
       } flex items-start py-10 px-5 lg:px-10 lg:py-20 gap-10 justify-center`}
     >
       <Reveal
-        className="h-full lg:w-[45%] w-full overflow-hidden lg:rounded-xl  shadow-2xl shadow-gray-500"
+        className="h-[325px] lg:h-[400px] lg:w-fit w-full overflow-hidden lg:rounded-xl  shadow-2xl shadow-gray-500"
         classNameItem="h-full w-full"
       >
-        <Link href={link || ""} target="_blank">
+        <Link href={link || ""} target="_blank" className="h-full w-full block">
           <Image
             src={imgSrc || "/images/about-image.jpg"}
             alt="avatar"
             width={1536}
             height={2024}
-            className=" aspect-auto w-full h-auto rounded  sm:mx-auto  hover:scale-110 transform transition duration-700"
+            className=" aspect-auto w-full h-full object-contain rounded  sm:mx-auto  hover:scale-110 transform transition duration-700"
           />
         </Link>
       </Reveal>
