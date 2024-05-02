@@ -53,7 +53,7 @@ export default function WorkBox({
             {name} - {year}
           </h2>
 
-          <div className="rounded-full w-fit border-2 border-solid border-gray-300 p-5">
+          <div className="rounded-full w-fit border-2 border-solid border-gray-300 lg:p-5 p-2">
             {tech.map((item, index) => (
               <span key={item} className="lg:mr-2 mr-1 text-sm">
                 {item} {index !== tech.length - 1 && "●"}
