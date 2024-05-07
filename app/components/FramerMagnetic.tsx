@@ -4,8 +4,9 @@ import { motion } from "framer-motion";
 import React, { useRef, useState } from "react";
 interface Props {
   children: React.ReactNode;
+  className?: string;
 }
-export default function FramerMagnetic({ children }: Props) {
+export default function FramerMagnetic({ children, className }: Props) {
   const ref = useRef<any>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const { x, y } = position;
@@ -22,6 +23,7 @@ export default function FramerMagnetic({ children }: Props) {
   return (
     <motion.div
       ref={ref}
+      className={className}
       onMouseMove={mouseMove}
       onMouseLeave={mouseLeave}
       animate={{ x, y }}

@@ -11,10 +11,14 @@ export default function Contact() {
     >
       <h1 className="lg:text-7xl text-5xl font-bold">CONTACTS</h1>
       <div className="flex items-center justify-center gap-10 w-full">
-        <FramerMagnetic>
-          <Link href={"https://www.facebook.com/trikiet.le.16"} target="_blank">
+        <FramerMagnetic className="w-[25%] lg:w-[100px]">
+          <Link
+            href={"https://www.facebook.com/trikiet.le.16"}
+            target="_blank"
+            className="w-full"
+          >
             <svg
-              className="w-[50px] lg:w-[100px]"
+              className="w-full"
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
@@ -26,10 +30,14 @@ export default function Contact() {
             </svg>
           </Link>
         </FramerMagnetic>
-        <FramerMagnetic>
-          <Link href={"https://www.linkedin.com/in/kietletri"} target="_blank">
+        <FramerMagnetic className="w-[25%] lg:w-[100px]">
+          <Link
+            href={"https://www.linkedin.com/in/kietletri"}
+            target="_blank"
+            className="w-full"
+          >
             <svg
-              className="w-[50px] lg:w-[100px]"
+              className="w-full"
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
@@ -41,10 +49,10 @@ export default function Contact() {
             </svg>
           </Link>
         </FramerMagnetic>
-        <FramerMagnetic>
-          <Link href="mailto:boyld222@gmail.com">
+        <FramerMagnetic className="w-[25%] lg:w-[100px]">
+          <Link href="mailto:boyld222@gmail.com" className="w-full">
             <svg
-              className="w-[50px] lg:w-[100px]"
+              className="w-full"
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
@@ -56,10 +64,14 @@ export default function Contact() {
             </svg>
           </Link>
         </FramerMagnetic>
-        <FramerMagnetic>
-          <Link href={"https://github.com/boyld222"} target="_blank">
+        <FramerMagnetic className="w-[25%] lg:w-[100px]">
+          <Link
+            href={"https://github.com/boyld222"}
+            target="_blank"
+            className="w-full"
+          >
             <svg
-              className="w-[50px] lg:w-[100px]"
+              className="w-full"
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
