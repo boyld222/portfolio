@@ -14,6 +14,7 @@ export default function Contact() {
         <FramerMagnetic>
           <Link href={"https://www.facebook.com/trikiet.le.16"} target="_blank">
             <svg
+              className="w-[50px] lg:w-[100px]"
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
@@ -28,6 +29,7 @@ export default function Contact() {
         <FramerMagnetic>
           <Link href={"https://www.linkedin.com/in/kietletri"} target="_blank">
             <svg
+              className="w-[50px] lg:w-[100px]"
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
@@ -42,6 +44,7 @@ export default function Contact() {
         <FramerMagnetic>
           <Link href="mailto:boyld222@gmail.com">
             <svg
+              className="w-[50px] lg:w-[100px]"
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
@@ -56,6 +59,7 @@ export default function Contact() {
         <FramerMagnetic>
           <Link href={"https://github.com/boyld222"} target="_blank">
             <svg
+              className="w-[50px] lg:w-[100px]"
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
