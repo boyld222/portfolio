@@ -22,7 +22,7 @@ export default function Info() {
       <span className="lg:text-3xl text-xl font-semibold">
         Here is{" "}
         <a
-          href="/resume.pdf"
+          href="/CV-LeTriKiet-Frontend-Dev.pdf"
           download="CV-LeTriKiet-Frontend-Dev"
           className="underline uppercase text-blue-600"
         >
