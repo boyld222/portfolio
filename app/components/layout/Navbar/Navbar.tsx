@@ -82,7 +82,11 @@ export default function Navbar({ routes }: { routes: RouteType[] }) {
               animate="enter"
               exit="exit"
             >
-              <Link href={item.href} className="text-white">
+              <Link
+                href={item.href}
+                target={item.blank ? "_blank" : "_self"}
+                className="text-white"
+              >
                 {item.title}
               </Link>
             </motion.div>

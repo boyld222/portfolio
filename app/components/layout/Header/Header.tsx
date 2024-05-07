@@ -7,6 +7,7 @@ import Navbar from "../Navbar/Navbar";
 import { RouteType } from "../Navbar/data";
 import AnimatedText from "./AnimatedText";
 import Button from "./Button";
+import { useOutsideClick } from "@/app/hooks/useOutsideClick";
 
 const jetBrains_mono = JetBrains_Mono({
   subsets: ["latin"],
@@ -55,6 +56,12 @@ export default function Header() {
       href: "#contact",
     },
   ];
+  const handleClickOutside = () => {
+    setisActive(false);
+  };
+
+  const ref = useOutsideClick(handleClickOutside);
+
   return (
     <div className="fixed top-0 py-5 px-5 w-full h-fit flex items-center justify-between bg-[#f8f8f8] z-50">
       <span
@@ -75,7 +82,7 @@ export default function Header() {
         })}
       </div>
       {/* Mobile Menu */}
-      <div className="relative w-fit h-[64px] block lg:hidden">
+      <div className="relative w-fit h-[64px] block lg:hidden" ref={ref}>
         <div className="absolute top-0 right-0">
           <motion.div
             variants={variant}
