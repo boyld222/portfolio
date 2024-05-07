@@ -1,7 +1,6 @@
 import Image from "next/image";
-import React from "react";
-import Info from "./Info";
 import Reveal from "../Reveal/Reveal";
+import Info from "./Info";
 
 export default function About() {
   return (
