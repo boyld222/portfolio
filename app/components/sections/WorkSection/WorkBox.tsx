@@ -36,8 +36,8 @@ export default function WorkBox({
               alt="avatar"
               fill
               placeholder="blur"
-              objectFit="contain"
-              className="hover:scale-110 transform transition duration-700"
+              className="hover:scale-110 transform transition duration-700 object-contain"
+              sizes="100vw"
             />
           </div>
         </Link>

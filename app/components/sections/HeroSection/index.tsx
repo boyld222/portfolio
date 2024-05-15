@@ -1,11 +1,7 @@
 "use client";
-import LineIcon from "@/public/images/line.svg";
-import Image from "next/image";
-import Reveal from "../../Reveal/Reveal";
-import Title from "./Title";
-import Link from "next/link";
-import { useTransform, motion, MotionValue } from "framer-motion";
 import HeroImage from "@/public/images/hero-image-2.png";
+import { MotionValue, motion, useTransform } from "framer-motion";
+import Image from "next/image";
 
 interface Props {
   scrollYProgress: MotionValue<number>;
@@ -51,7 +47,8 @@ export default function Hero({ scrollYProgress }: Props) {
             alt="avatar"
             placeholder="blur"
             fill
-            objectFit="cover"
+            className="object-cover"
+            sizes="100vw"
           />
         </div>
       </div>

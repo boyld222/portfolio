@@ -15,7 +15,7 @@ export default function Home() {
     offset: ["start start", "end end"],
   });
   return (
-    <main ref={container} className="bg-black h-fit">
+    <main ref={container} className="bg-black h-fit relative">
       <Hero scrollYProgress={scrollYProgress} />
       <Works />
       <Services />

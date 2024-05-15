@@ -15,8 +15,8 @@ export default function About() {
           placeholder="blur"
           alt="avatar"
           fill
-          objectFit="cover"
-          className=" aspect-auto w-full h-full rounded object-cover sm:mx-auto 2xl:rounded-2xl shadow-2xl"
+          sizes="100vw"
+          className=" aspect-auto w-full h-full rounded  sm:mx-auto 2xl:rounded-2xl shadow-2xl object-cover"
         />
       </div>
       <Reveal className="sticky xl:top-32 lg:top-28 lg:w-[45%] w-full  self-start">
