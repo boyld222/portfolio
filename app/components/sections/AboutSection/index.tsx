@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="h-fit w-full flex-col lg:flex-row flex items-start lg:py-20 py-10 px-5 lg:px-10 lg:gap-40 gap-10 relative bg-white"
+      className="z-10 h-fit w-full flex-col lg:flex-row flex items-start lg:py-20 py-10 px-5 lg:px-10 lg:gap-40 gap-10 relative bg-white"
     >
       <div className="lg:h-[100vh] h-[50vh] lg:w-[45%] w-full relative">
         <Image

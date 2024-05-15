@@ -37,7 +37,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="min-h-screen w-full bg-[#D9D9D9] px-5 py-10 lg:p-20  relative"
+      className="min-h-screen w-full bg-[#D9D9D9] px-5 py-10 lg:p-20  relative z-10"
     >
       {/* <Reveal className="lg:w-1/2 w-full"></Reveal> */}
       <div className="flex flex-col lg:flex-row  justify-between mb-20">

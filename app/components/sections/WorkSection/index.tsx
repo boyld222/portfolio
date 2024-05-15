@@ -31,7 +31,7 @@ export default function Works() {
     },
   ];
   return (
-    <section id="works" className="h-fit w-full bg-black p-10 relative">
+    <section id="works" className="h-fit w-full bg-black p-10 relative z-10">
       <h1 className="lg:text-7xl text-5xl text-gray-300 font-bold text-center ">
         {"◓ SELECTED WORKS ◓"}
       </h1>
