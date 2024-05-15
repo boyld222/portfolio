@@ -1,16 +1,25 @@
-import About from "../components/AboutSection";
-import Contact from "../components/ContactSection";
-import Hero from "../components/HeroSection";
-import Services from "../components/ServicesSection";
-import Works from "../components/WorkSection";
+"use client";
+
+import { useRef } from "react";
+import About from "../components/sections/AboutSection";
+import Contact from "../components/sections/ContactSection";
+import Hero from "../components/sections/HeroSection";
+import Services from "../components/sections/ServicesSection";
+import Works from "../components/sections/WorkSection";
+import { useScroll } from "framer-motion";
 
 export default function Home() {
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start start", "end end"],
+  });
   return (
-    <main className="h-screen w-fit lg;pt-2 pt-10">
-      <Hero />
-      <About />
-      <Services />
+    <main ref={container} className="bg-black h-fit">
+      <Hero scrollYProgress={scrollYProgress} />
       <Works />
+      <Services />
+      <About />
       <Contact />
     </main>
   );

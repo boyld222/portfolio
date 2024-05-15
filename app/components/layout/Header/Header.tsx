@@ -63,26 +63,27 @@ export default function Header() {
   const ref = useOutsideClick(handleClickOutside);
 
   return (
-    <div className="fixed top-0 py-5 px-5 w-full h-fit flex items-center justify-between bg-[#f8f8f8] z-50">
+    <div className="fixed top-0 py-5 px-5 w-full h-fit flex items-center justify-between bg-transparent z-50">
       <span
-        className={`text-black text-2xl font-semibold ${jetBrains_mono.className} `}
+        className={`text-[#6B6B6B] text-2xl font-semibold ${jetBrains_mono.className} `}
       >
         letrikiet
       </span>
-      {/* Web Menu */}
-      <div className="hidden gap-6 lg:flex">
+      {/* <div className="hidden gap-6 lg:flex">
         {routes.map((route, index) => {
           return (
             <Link key={index} className="relative" href={route.href}>
               <AnimatedText>
-                <span className="tracking-[0.25em] ">{route.title}</span>
+                <span className="tracking-[0.25em] text-[#6B6B6B]">
+                  {route.title}
+                </span>
               </AnimatedText>
             </Link>
           );
         })}
-      </div>
+      </div> */}
       {/* Mobile Menu */}
-      <div className="relative w-fit h-[64px] block lg:hidden" ref={ref}>
+      <div className="relative w-fit h-[64px] block" ref={ref}>
         <div className="absolute top-0 right-0">
           <motion.div
             variants={variant}
