@@ -16,13 +16,13 @@ export default function Hero({ scrollYProgress }: Props) {
     <motion.section
       id="hero"
       style={{ scale }}
-      className="text-black-300 h-screen sticky top-0 bg-white z-0 py-10 px-5"
+      className="text-black-300 h-screen sticky top-0 bg-slate-100 z-0 py-10 px-5"
     >
       <div className="flex justify-center lg:justify-around lg:gap-0 items-center h-full flex-col-reverse lg:flex-row gap-10">
         <div className="flex flex-col gap-10">
           <span>
             <h1 className="lg:text-7xl text-5xl font-bold uppercase">
-              Hi, there
+              Hi, there.
             </h1>
             <h1 className="lg:text-7xl text-5xl font-bold">
               TRI KIET IS RIGHT HERE !
@@ -30,6 +30,11 @@ export default function Hero({ scrollYProgress }: Props) {
           </span>
           <span>
             <p className="lg:text-3xl text-xl max-w-[33ch]">{textIntroduce}</p>
+          </span>
+          <span>
+            <p className="lg:text-xl text-xl max-w-[33ch]">
+              Ho Chi Minh City, Vietnam
+            </p>
           </span>
           <button className="w-fit p-5 bg-black text-gray-300 font-bold rounded-sm under hover:underline hover:text-white">
             <a
